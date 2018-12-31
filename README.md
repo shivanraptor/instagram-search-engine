@@ -23,9 +23,9 @@ In this project, programming language Python and MySQL database are used. The fo
 - MySQL 
 - MySQL Client
 
-Note: We're using Ubuntu Server 16.04 LTS, assumed Python 2.7 and MySQL server are installed. Before installing Python libraries, the following command has to be executed in Ubuntu first:
+Note: We're using Ubuntu Server 16.04 LTS, assumed Python 2.7 and MySQL server are installed. Before installing Python libraries, the following command has to be executed in Ubuntu first (to install additional library in Ubuntu):
 
-    sudo apt-get install libmysqlclient-dev
+    sudo apt-get install libmysqlclient-dev libsm6 libxrender1 libxext6
 
 Then, you can install these via `pip`: `pip install imagehash pillow imutils opencv-python mysqlclient`
 
