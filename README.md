@@ -46,7 +46,7 @@ Then, you can install these via `pip`: `pip install imagehash pillow imutils ope
 2. The script will load for few minutes, computing the hashes and store in MySQL database.
 
 *Usage Phase*
-1. To search the images, run: `python search.py --dataset images --query path/to/image_to_search.jpg`
+1. To search the images, run: `python search.py --query path/to/image_to_search.jpg`
 2. The result will return.
 
 **Problems**
