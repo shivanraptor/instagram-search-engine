@@ -3,10 +3,12 @@ This is an experimental Image Reverse Search Engine for Instagram (IG).
 
 
 **Reason to create this Search Engine**
+
 1. Instagram images are not searchable via Google Images Reverse Search
 2. There is no similar IG-targeted search engine in the market
 
 **The Mechanism**
+
 The mechanism is simple yet ineffective at this moment.
 
 1. Download some IG users' images via rarcega's [Instagram Scraper](https://github.com/rarcega/instagram-scraper/)
@@ -14,6 +16,7 @@ The mechanism is simple yet ineffective at this moment.
 3. When a user uploads an image to perform reverse search, the system will compare the hashes in the database and found out the answer(s); more than 1 answer might return. We only return the IG user name(s) as answer.
 
 **Requirements and Installation**
+
 In this project, programming language Python and MySQL database are used. The following libraries are used:
 
 - ImageHash 4.0
@@ -30,6 +33,7 @@ Note: We're using Ubuntu Server 16.04 LTS, assumed Python 2.7 and MySQL server a
 Then, you can install these via `pip`: `pip install imagehash pillow imutils opencv-python mysqlclient`
 
 **Usage**
+
 *Preparation Phase - Images*
 1. Download the images from IG users
 2. Save it to `images/` folder, with IG user name as subfolder names. Example: if the IG user name is `abc123`, the photos should be stored at `images/abc123/`.
@@ -46,6 +50,7 @@ Then, you can install these via `pip`: `pip install imagehash pillow imutils ope
 2. The result will return.
 
 **Problems**
+
 1. The major problem is the Instagram Scraper Python script always return 403 Forbidden after few minutes of scraping, due to increased security measures of Instagram. Instagram will block suspecious connections if the scraping is too fast.
 
 - To deal with this problem, we temporarily use some Chrome extension to fetch IG users' images. This approach has to be done manually, which is inefficient.
@@ -59,4 +64,5 @@ Then, you can install these via `pip`: `pip install imagehash pillow imutils ope
 - Still finding a way to tackle this problem. Yet, for a prototype, it is already sufficient.
 
 **Future Updates**
+
 - Website version of this prototype
