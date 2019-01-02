@@ -7,6 +7,14 @@ This is an experimental Image Reverse Search Engine for Instagram (IG).
 1. Instagram images are not searchable via Google Images Reverse Search
 2. There is no similar IG-targeted search engine in the market
 
+**Demo link for web version of Search Engine**
+
+Here is the a demo website of this search engine: https://igsearch.yourappapp.com.
+In this demo, records of 28,000 photos from 30 IG users are available to search.
+Source codes are available in this repo (in `website/` directory) as well.
+
+You can download the *demo.jpg* from `tools/` folder to play with the search engine.
+
 **The Mechanism**
 
 The mechanism is simple yet ineffective at this moment.
@@ -65,4 +73,6 @@ Then, you can install these via `pip`: `pip install imagehash pillow imutils ope
 
 **Future Updates**
 
-- Website version of this prototype
+- <s>Website version of this prototype</s> Done on 2 Jan 2019
+- Cron job / Scheduled job for indexing / fetching Instagram
+- Regular cleanup of rogue images
