@@ -40,18 +40,21 @@ Note: We're using Ubuntu Server 16.04 LTS, assumed Python 2.7 and MySQL server a
 
 Then, you can install these via `pip`: `pip install imagehash pillow imutils opencv-python mysqlclient`
 
-**Usage**
+**Command Usage**
 
 *Preparation Phase - Images*
 1. Download the images from IG users
 2. Save it to `images/` folder, with IG user name as subfolder names. Example: if the IG user name is `abc123`, the photos should be stored at `images/abc123/`.
 
 *Preparation Phase - Database*
-1. Run the database initiation script: `db_init.sql` in MySQL
+1. Create a schema
+2. Run the database initiation script: `db_init.sql` in MySQL
+3. Update the database connection settings in `config.py`
 
 *Indexing Phase*
 1. Run the indexing script: `python index.py --dataset images`
 2. The script will load for few minutes, computing the hashes and store in MySQL database.
+3. (Optional) Remove the contents in images folder to save space (only if you plan not to show the image to your user)
 
 *Usage Phase*
 1. To search the images, run: `python search.py --query path/to/image_to_search.jpg`
